@@ -189,7 +189,7 @@ func Test_AuthSources(t *testing.T) {
 					expectedBody = "invalid key"
 				}
 
-				if authSource == paramExtractorName && testKey == "" {
+				if authSource == paramExtractorName && test.APIKey == "" {
 					expectedCode = 404
 					expectedBody = "Cannot GET /"
 				}
